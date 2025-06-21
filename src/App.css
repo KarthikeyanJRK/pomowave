@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Cousine', monospace;
+  background-color: #cfcfcf;
+}
+
+.boot-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: black;
+  color: lime;
+  font-size: 1.5rem;
+}
+
+.retro-ui {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.title-bar {
+  background: linear-gradient(to right, #ffcc33, #ffa500);
+  padding: 0.5rem 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: 3px solid black;
+}
+
+.window {
+  flex: 1;
+  background: #fffbe0;
+  border: 3px solid black;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.window-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffaa;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid black;
+  position: relative;
+}
+
+.settings-btn {
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  font-size: 1rem;
+  background: #e0e0e0;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0 black;
+  padding: 0.2rem 0.5rem;
+  cursor: pointer;
+}
+
+.window-body {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-section {
+  text-align: center;
+  width: 100%;
+}
+
+.center-modes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.mode-btn {
+  font-family: inherit;
+  font-size: 1.1rem;
+  padding: 1rem 2rem;
+  border: 2px solid black;
+  background: #f3f3f3;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 black;
+}
+
+.mode-btn.active {
+  background: #ffcc33;
+}
+
+.timer-display {
+  font-size: 4rem;
+  margin: 1.5rem 0;
+  font-weight: bold;
+}
+
+.controls button {
+  margin: 0 0.5rem;
+  padding: 0.75rem 1.2rem;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 2px solid black;
+  background: #e0e0ff;
+  box-shadow: 2px 2px 0 black;
+  cursor: pointer;
+}
+
+.pomodoro-count {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.taskbar {
+  height: 2.5rem;
+  background: #dcdcdc;
+  border-top: 3px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 1rem;
+}
+
+.taskbar-time {
+  font-size: 0.9rem;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-window {
+  background: #ffffe0;
+  border: 3px solid black;
+  padding: 1rem;
+  width: 300px;
+  box-shadow: 4px 4px 0 black;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.popup-body label {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.popup-body input,
+.popup-body select {
+  width: 100%;
+  margin-top: 0.25rem;
+  padding: 0.25rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.save-btn {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  background: #caffca;
+  border: 2px solid black;
+  box-shadow: 2px 2px 0 black;
+  cursor: pointer;
+}
